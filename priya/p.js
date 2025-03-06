@@ -23,3 +23,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".expand-image", {
+    scale: 20, 
+    ease: "none", 
+    scrollTrigger: {
+        trigger: "body", 
+        start: "top top", 
+        end: "bottom bottom",
+        scrub: true, 
+    }
+});
