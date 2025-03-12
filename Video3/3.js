@@ -6,4 +6,4 @@ string.addEventListener("mousemove", function (dets) {
     gsap.to("svg path", { 
         attr: { d: intialPath } 
     })
-})
+} )
